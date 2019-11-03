@@ -1,0 +1,36 @@
+{
+  "name": "radanimaltees",
+  "version": "1.0.0",
+  "description": "RadAnimal tee Store",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonpaul108/RadAnimalTees.git"
+  },
+  "keywords": [
+    "tees",
+    "apparel"
+  ],
+  "author": "Jonathan McNamara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonpaul108/RadAnimalTees/issues"
+  },
+  "homepage": "https://github.com/jonpaul108/RadAnimalTees#readme",
+  "dependencies": {
+    "@material-ui/core": "^4.5.2",
+    "@material-ui/icons": "^4.5.1",
+    "@material/image-list": "^3.1.0",
+    "next": "^9.1.1",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0"
+  },
+  "devDependencies": {
+    "styled-components": "^4.4.1"
+  }
+}
