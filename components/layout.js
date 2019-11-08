@@ -1,5 +1,6 @@
 import Header from './header';
-import Head from 'next/head'
+import Head from 'next/head';
+import Footer from './footer';
 
 const layoutStyle = {
   width: '100%',
@@ -10,6 +11,7 @@ const layoutStyle = {
   flexGrow: 1,
   justifyContent: 'space-evenly',
 };
+
 
 const Layout = props => (
   <div style={layoutStyle}>
@@ -26,12 +28,14 @@ const Layout = props => (
   <style jsx global>{`
     body {
       min-height: 100%;
-      width:100%;
+      width: 100%;
+      background-color: rgb(215, 208, 200, 0.1);
     }
     `}
     </style>
-    <Header />
+    <Header /> 
     {props.children}
+    <Footer />
   </div>
 );
 

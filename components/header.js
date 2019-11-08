@@ -5,13 +5,13 @@ const containerStyle = {
   display: 'flex',
   flexDirection: 'row',
   justifyContent: 'space-evenly',
-  height:'3em',
-  minHeight:'20px',
+  minHeight:'4rem',
   alignItems:'center',
   width: '100%',
   minWidth: '400px',
   position: 'fixed',
   top: 0,
+  left: 0,
   backgroundColor: 'white',
 };
 
@@ -20,8 +20,8 @@ const logoContainerStyle = {
   flexDirection: 'row',
   justifyContent: 'start',
   alignItems:'center',
-  justifySelf: 'start',
-  width:'33%',
+  flexGrow: 1,
+  margin: 'auto',
 }
 
 const logoA = {
@@ -30,25 +30,25 @@ const logoA = {
   width: '33%',
   minWidth:'30px',
   minHeight:'30px',
-  paddingLeft: '30px',
+  margin: 'auto',
 }
 
 const logoImgStyle= {
   alignSelf: 'flex-start',
   maxHeight: '30px',
   maxWidth: '30px',
-  paddingLeft: '20%',
+  margin: 'auto',
+  position: 'relative',
+  right: '50%',
 }
-
-
 
 const menuContainer = {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  minWidth: '150px',
   justifySelf:'center',
-  width:'33%',
+  margin: 'auto',
+  flexGrow: 1,
 }
 
 const menuItems = {
@@ -56,11 +56,13 @@ const menuItems = {
   width: '100%',
   justifyContent: 'space-evenly',
   alignItems: 'center',
+  margin: 'auto',
 }
 
 const socialMediaBox = {
   justifySelf:'end',
-  width:'33%',
+  flexGrow: 1,
+  margin: 'auto',
 }
 const Header = () => (
   <div className='container' style={containerStyle}>
@@ -80,7 +82,8 @@ const Header = () => (
           <a  title="about">ABOUT</a>
         </Link>
         <Link href="/shirts">
-          <a>SHIRTS</a>
+          <a>SHIRTS
+          </a>
         </Link>
         <style jsx>{`
           @import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
@@ -88,13 +91,18 @@ const Header = () => (
           a {
             font-family: 'Oswald', sans-serif;
             text-decoration: none;
+            margin: auto
           }
           `}
          
         </style>
         </div>
     </div>
-    <div style={socialMediaBox}></div>
+    <div style={socialMediaBox}>
+      <a><img></img></a>
+      <a><img></img></a>
+      <a><img></gim></a>
+    </div>
   </div>
 )
 

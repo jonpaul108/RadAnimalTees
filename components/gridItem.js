@@ -16,11 +16,12 @@ const useStyles = makeStyles(theme => ({
 
 const GridItem = ({
   img,
-  lnk
+  lnk,
+  xs,
 }) => {
   const classes = useStyles();
   return (
-    <Grid key={`${img}`} item xs={4} >
+    <Grid key={`${img}`} item xs={xs} >
         <Paper className={classes.paper}>
           <a href={lnk}>
             <img src={`/static/${img}`}/>

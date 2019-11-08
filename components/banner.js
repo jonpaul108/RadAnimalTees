@@ -3,9 +3,9 @@ import { Hidden } from '@material-ui/core';
 
 
 
-const Banner = ({bannerStyle}) => (
+const Banner = ({bannerStyle, bannerImg}) => (
   <div className='banner' style={ bannerStyle }> 
-        <img src='/static/giraffeBanner.jpg' alt='giraffeBanner'></img>
+        <img src={`/static/${bannerImg}.jpg`} alt='giraffeBanner'></img>
         <style jsx>{`
           img {
             width: 100%;
