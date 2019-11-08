@@ -4,57 +4,75 @@ import Link from 'next/link';
 const containerStyle = {
   display: 'flex',
   flexDirection: 'row',
-  justifyContent: 'center',
-  minHeight:'3em',
+  justifyContent: 'space-evenly',
+  height:'3em',
+  minHeight:'20px',
   alignItems:'center',
-  minWidth: '100%',
+  width: '100%',
+  minWidth: '400px',
   position: 'fixed',
   top: 0,
   backgroundColor: 'white',
 };
-
-const logoStyle= {
-  alignSelf: 'flex-start',
-  maxHeight: '8%',
-  maxWidth: '8%',
-  paddingLeft: '20%',
-}
-
 
 const logoContainerStyle = {
   display: 'flex',
   flexDirection: 'row',
   justifyContent: 'start',
   alignItems:'center',
+  justifySelf: 'start',
+  width:'33%',
 }
 
 const logoA = {
   display: 'flex',
   flexDirection: 'row',
-  minWidth: '33%',
-  paddingLeft: '5%',
+  width: '33%',
+  minWidth:'30px',
+  minHeight:'30px',
+  paddingLeft: '30px',
 }
+
+const logoImgStyle= {
+  alignSelf: 'flex-start',
+  maxHeight: '30px',
+  maxWidth: '30px',
+  paddingLeft: '20%',
+}
+
+
 
 const menuContainer = {
   display: 'flex',
   alignItems: 'center',
-  justifyContent: 'space-evenly',
-  minWidth: '33%',
+  justifyContent: 'center',
+  minWidth: '150px',
+  justifySelf:'center',
+  width:'33%',
 }
 
-const ghostDiv = {
-  minWidth: '33%',
+const menuItems = {
+  display: 'flex',
+  width: '100%',
+  justifyContent: 'space-evenly',
+  alignItems: 'center',
+}
+
+const socialMediaBox = {
+  justifySelf:'end',
+  width:'33%',
 }
 const Header = () => (
   <div className='container' style={containerStyle}>
     <div style={logoContainerStyle}>
       <Link href="/" >
         <a className="logo" style={logoA}>
-          <img src="./static/radALogo.png" alt="logo" style={logoStyle} />
+          <img src="./static/radALogo.png" alt="logo" style={logoImgStyle} />
         </a>
       </Link>
     </div>
       <div style={menuContainer}>
+        <div style={menuItems}>
         <Link href="/" >
           <a title="home">HOME</a>
         </Link>
@@ -68,15 +86,19 @@ const Header = () => (
           @import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
 
           a {
-
             font-family: 'Oswald', sans-serif;
             text-decoration: none;
           }
           `}
+         
         </style>
+        </div>
     </div>
-    <div style={ghostDiv}></div>
+    <div style={socialMediaBox}></div>
   </div>
 )
 
 export default Header
+
+
+

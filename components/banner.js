@@ -4,7 +4,7 @@ const bannerStyle = {
   minWidth: '100%',
   minHeight:'75%',
   backgroundColor: 'blue',
-  marginTop: '3.5em',
+  marginTop: '3.5rem',
 }
 
 const Banner = () => (

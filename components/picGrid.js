@@ -23,7 +23,7 @@ const rootStyle = {
   maxHeight: '75%',
   display: 'flex',
   justifyContent: 'center',
-
+  minWidth: '400px',
 }
 
 const pics = [
