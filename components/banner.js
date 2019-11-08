@@ -1,14 +1,19 @@
-const bannerStyle = {
-  width: '100%',
-  height:'75vh',
-  minWidth: '100%',
-  minHeight:'75%',
-  backgroundColor: 'blue',
-  marginTop: '3.5rem',
-}
+import Link from 'next/Link';
+import { Hidden } from '@material-ui/core';
 
-const Banner = () => (
-  <div className='banner' style={ bannerStyle }></div>
+
+
+const Banner = ({bannerStyle}) => (
+  <div className='banner' style={ bannerStyle }> 
+        <img src='/static/giraffeBanner.jpg' alt='giraffeBanner'></img>
+        <style jsx>{`
+          img {
+            width: 100%;
+            height: auto;
+            transform: ''
+          }
+        `}</style>
+  </div>
 );
 
 export default Banner;

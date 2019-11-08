@@ -1,5 +1,14 @@
 import Layout from '../components/layout';
 import ShirtPost from '../components/shirtPost';
+import picGrid from '../components/picGrid';
+
+const pics = {
+  
+}
+
+const gridStyles={
+
+}
 
 const Shirts = () => (
   <Layout>
