@@ -10,6 +10,7 @@ const typeContainer = {
   flexGrow: 1,
   maxWidth: '60%',
   minWidth: '200px',
+  marginTop: '8rem',
 }
 
 

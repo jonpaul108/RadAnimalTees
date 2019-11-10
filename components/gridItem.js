@@ -22,7 +22,7 @@ const GridItem = ({
   const classes = useStyles();
   return (
     <Grid key={`${img}`} item xs={xs} >
-        <Paper className={classes.paper}>
+       
           <a href={lnk}>
             <img src={`/static/${img}`}/>
           </a>
@@ -32,7 +32,7 @@ const GridItem = ({
               max-width: 100%;
             }
             `} </style>
-    </Paper>
+
     </Grid>
   )
 };

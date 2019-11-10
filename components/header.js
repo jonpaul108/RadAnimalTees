@@ -20,8 +20,8 @@ const logoContainerStyle = {
   flexDirection: 'row',
   justifyContent: 'start',
   alignItems:'center',
-  flexGrow: 1,
-  margin: 'auto',
+  flex: 1,
+  marginRight: 'auto',
 }
 
 const logoA = {
@@ -37,7 +37,6 @@ const logoImgStyle= {
   alignSelf: 'flex-start',
   maxHeight: '30px',
   maxWidth: '30px',
-  margin: 'auto',
   position: 'relative',
   right: '50%',
 }
@@ -46,23 +45,34 @@ const menuContainer = {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  justifySelf:'center',
-  margin: 'auto',
-  flexGrow: 1,
+  flex: 1,
+  margin:'auto',
+  left: '10px',
+  position:'relative',
 }
 
 const menuItems = {
   display: 'flex',
   width: '100%',
-  justifyContent: 'space-evenly',
+  justifyContent: 'center',
   alignItems: 'center',
   margin: 'auto',
 }
 
 const socialMediaBox = {
   justifySelf:'end',
-  flexGrow: 1,
+  flex: 1,
+  display: 'flex',
   margin: 'auto',
+  justifyContent: 'center',
+}
+
+const socialIcon = {
+margin: '10px',
+}
+
+const iconImg = {
+  maxHeight: '2rem',
 }
 const Header = () => (
   <div className='container' style={containerStyle}>
@@ -74,7 +84,7 @@ const Header = () => (
       </Link>
     </div>
       <div style={menuContainer}>
-        <div style={menuItems}>
+      
         <Link href="/" >
           <a title="home">HOME</a>
         </Link>
@@ -82,8 +92,11 @@ const Header = () => (
           <a  title="about">ABOUT</a>
         </Link>
         <Link href="/shirts">
-          <a>SHIRTS
+          <a title="shirts">SHIRTS
           </a>
+        </Link>
+        <Link href="/contact">
+          <a title="contact">CONTACT</a>
         </Link>
         <style jsx>{`
           @import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
@@ -96,12 +109,12 @@ const Header = () => (
           `}
          
         </style>
-        </div>
+
     </div>
-    <div style={socialMediaBox}>
-      <a><img></img></a>
-      <a><img></img></a>
-      <a><img></gim></a>
+    <div style={socialMediaBox} className='socialMediaBox'>
+        <a href='https://www.facebook.com/radanimalapparel/' className='socialIcon' style={socialIcon}><img className='iconImg' style={iconImg} src='./static/facebookIconforWeb.png' alt='facebookIcon' ></img></a>
+        <a href='https://www.pinterest.it/radanimalapparel/' className='socialIcon' style={socialIcon}><img className='iconImg' style={iconImg} src='./static/pinterestIconforWeb.png' alt='pinterestIcon' ></img></a>
+        <a href='https://www.instagram.com/rad_animal_apparel/' className='socialIcon' style={socialIcon}><img className='iconImg'style={iconImg} src='./static/instagramIconForWeb.png' alt='instagramIcon' ></img></a>
     </div>
   </div>
 )

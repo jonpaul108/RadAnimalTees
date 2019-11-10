@@ -1,6 +1,7 @@
 import Header from './header';
 import Head from 'next/head';
 import Footer from './footer';
+import emailjs from 'emailjs-com';
 
 const layoutStyle = {
   width: '100%',
@@ -23,7 +24,13 @@ const Layout = props => (
           name="viewport"
           content="initial-scale=1.0, width=device-width"
           key="viewport"
-        />
+    />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script type="text/javascript">
+       (function(){
+      emailjs.init("user_KSNeRW6sHLB0rdTwFcLrc") 
+   })();
+</script>
   </Head>
   <style jsx global>{`
     body {

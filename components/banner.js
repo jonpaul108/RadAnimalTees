@@ -12,7 +12,12 @@ const Banner = ({bannerStyle, bannerImg}) => (
             height: auto;
             transform: ''
           }
+
+          div:after {
+            background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) );
+          }
         `}</style>
+        
   </div>
 );
 

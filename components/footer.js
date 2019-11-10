@@ -1,16 +1,16 @@
 const footerStyle = {
-    backgroundColor: 'rgba(85, 25,139,0.8)',
+    backgroundColor: 'rgba(85, 25,139,0.7)',
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'center',
-    flexGrow: 1,
     alignItems: 'center',
     textAlign: 'center',
-    margin:'auto',
+    margin:0,
     width: '75%',
     minWidth:'400px',
-    height: '40vh',
-    minHeight: '5rem',
+    height: '5vh',
+    minHeight: '0.5rem',
+    flexShrink: 0,
 };
 
 const itemContainer ={
