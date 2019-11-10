@@ -1,8 +1,6 @@
 import Layout from '../components/layout';
 import Typography from '@material-ui/core/Typography';
-import {
-  makeStyles
-} from '@material-ui/core/styles';
+
 
 const typeContainer = {
   display: 'flex',

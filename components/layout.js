@@ -17,7 +17,7 @@ const layoutStyle = {
 const Layout = props => (
   <div style={layoutStyle}>
   <Head>
-    <meta charset="utf-8" />
+    <meta charSet="utf-8" />
     <meta name='author' content='Jonathan McNamara'/>
     <meta name='description' content='The Rad animal Website sees to distribute awesome t-shirts while supporting the rejuvenation of habitats and endangered species around the world.'/>
     <meta
@@ -25,12 +25,11 @@ const Layout = props => (
           content="initial-scale=1.0, width=device-width"
           key="viewport"
     />
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
     <script type="text/javascript">
        (function(){
       emailjs.init("user_KSNeRW6sHLB0rdTwFcLrc") 
    })();
-</script>
+  </script>
   </Head>
   <style jsx global>{`
     body {

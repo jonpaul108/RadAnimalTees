@@ -104,7 +104,8 @@ const Header = () => (
           a {
             font-family: 'Oswald', sans-serif;
             text-decoration: none;
-            margin: auto
+            margin: auto;
+            color: rgba(85, 25,139);
           }
           `}
          
